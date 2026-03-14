@@ -1,3 +1,5 @@
+//  github.com/hrushevka
+
 const sort_all_btn = document.querySelector('.sort-all');
 const sort_active_btn = document.querySelector('.sort-active');
 const sort_done_btn = document.querySelector('.sort-done');
