@@ -25,16 +25,6 @@
 }
 
 
-
-@media (max-width: 600px) {
-    .Adder {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-}
-
 .sort {
     width: 80%;
     display: flex;
@@ -43,7 +33,13 @@
     align-items: center;
 }
 
-@media (max-width: 470px) {
+@media (max-width: 600px) {
+    .Adder {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
     .sort {
         width: 70%;
         display: flex;
@@ -52,6 +48,7 @@
         align-items: center;
     }
 }
+
 
 .List {
     width: 70%;

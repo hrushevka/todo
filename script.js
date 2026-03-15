@@ -97,7 +97,6 @@ function draw_list(){
     tasks_list = JSON.parse(localStorage.getItem('tasks_list'));
 
     let list = tasks_list.tasks;
-    console.log(list);
 
     let error = 0;
     for(let i = 0; i < list.length; i++){
@@ -157,7 +156,6 @@ sort_done_btn.addEventListener('click', () => {
 
 function add_task(add_text){
     tasks_list = JSON.parse(localStorage.getItem('tasks_list'));
-    console.log(tasks_list);
     tasks_list.tasks.push({text: add_text, done: false, change: false});
     localStorage.setItem('tasks_list', JSON.stringify(tasks_list));
     draw_list();
