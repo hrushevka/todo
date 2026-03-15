@@ -7,12 +7,52 @@
     width: 100%;
     padding: 1rem;
 }
+
+
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .Adder {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: stretch;
+    align-items: center;
 }
+
+
+
+@media (max-width: 600px) {
+    .Adder {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.sort {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 470px) {
+    .sort {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
 .List {
     width: 70%;
     display: flex;
@@ -42,6 +82,11 @@ body {
     flex-direction: column;
     justify-content: stretch;
     align-items: center;
+    background-color: rgb(177, 130, 59);
+    overflow-x: hidden;
+}
+body h1{
+    color: white;
 }
 
 .task{
@@ -50,11 +95,71 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 0.5rem;
 }
-.task .div .span{
+.task div .span{
     word-wrap: inherit ;
+}
+.task div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
 }
 
 .cross-task{
     text-decoration: line-through;
+}
+
+button{
+    background-color: rgb(163, 117, 47);
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    color:  white;
+    border-radius: 0.5rem;
+    transition: all 0.1s;
+}
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.cur_sort{
+    background-color: rgb(172, 115, 31) !important;
+    transform: scale(1.1) !important;
+}
+.cur_sort:hover{
+    transform: scale(1.2) !important;
+}
+
+.task_id{
+    font-weight: bold;
+}
+
+.task_remover{
+    background-color: rgb(172, 79, 36);
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.4rem;
+}
+
+.adder-inp{
+    border: none;
+    outline: none;
+    background-color: rgb(163, 117, 47);
+    border-radius: 0.5rem;
+    /* width: 100%; */
+    color: white;
+    height: 2rem;
+}
+
+.change_task_inp{
+    border: none;
+    outline: none;
+    background-color: none;
+    border-bottom: 4px solid black;
+    background: none;
+    width: 100%;
 }
