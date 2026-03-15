@@ -144,6 +144,7 @@ function set_sort_type(type){
     buttons[type].className += " cur_sort"
 }
 
+// кнопки сортировки
 sort_active_btn.addEventListener('click', () => {
     set_sort_type(1)
 })
@@ -180,7 +181,7 @@ function add_enter(event){
 adder_add_btn.addEventListener('click', brt_add);
 
 function setup_localStorage(){
-    if (localStorage.length == 0){
+    if (localStorage.getItem('tasks_list') === null){
         localStorage.setItem('tasks_list', JSON.stringify({tasks:[]}));
     }
     draw_list();
